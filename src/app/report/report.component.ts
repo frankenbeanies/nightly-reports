@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { Report } from '../models/report';
 
@@ -8,5 +8,10 @@ import { Report } from '../models/report';
     styles: ['./report.component.css']
 })
 export class ReportComponent {
-    public report: Report = new Report();
+    @Input("report") report: Report = new Report();
+    @Output("reportEmitter") ReportEmitter: EventEmitter<Report> = new EventEmitter<Report>();
+
+    public Change(): void {
+        this.ReportEmitter.emit(this.report);
+    }
 }

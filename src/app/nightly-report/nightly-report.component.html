@@ -14,18 +14,18 @@
             </div>
             <div class="form row">
                 <div class="col-md-6 form-group">
-                    <report></report>
+                    <report [report]="nightlyReport.InToday" (reportEmitter)="nightlyReport.InToday = $event"></report>
                 </div>
                 <div class="col-md-6 form-group">
-                    <report></report>
+                    <report [report]="nightlyReport.OutToday" (reportEmitter)="nightlyReport.OutToday = $event"></report>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 form-group">
-                    <report></report>
+                    <report [report]="nightlyReport.InTomorrow" (reportEmitter)="nightlyReport.InTomorrow = $event"></report>
                 </div>
                 <div class="col-md-6 form-group">
-                    <report></report>
+                    <report [report]="nightlyReport.OutTomorrow" (reportEmitter)="nightlyReport.OutTomorrow = $event"></report>
                 </div>
             </div>
             <div class="form-group">

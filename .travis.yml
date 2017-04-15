@@ -1,20 +1,20 @@
 language: node_js
 node_js:
-  - "6.9"
-
+- '6.9'
 dist: trusty
 sudo: false
-
 addons:
   apt:
     packages:
-      - google-chrome-stable
-
+    - google-chrome-stable
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start &
-  - sleep 3
-
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start &
+- sleep 3
 script:
-  - ng test --single-run
-  - ng build --prod
+- ng test --single-run
+- ng build --prod
+deploy:
+provider: heroku
+  api_key:
+    secure: KobGb7ZkRF2WIDLPn/jv1SUcECqYx9EEvwE0tslXEZ7p77Ef3rWwMZqG4Loj267pjjk7s0OnwObHYSIh/fPzim1s/GGKZ6o7WbQ/C6ytzisWo4SAmfKN0SFIwVe9wWbq2jStbAYQdJCPhJ1c12GTpQCyxG3AkaYZY9DYb2N/mj+hzWHiSjhHuMe7jfiTtuFv65Wbm/rhj+n6N0Buga3UzUbbmeOb+sJqkmiTpx2OeAItBYCweRFlSDGOcOfb2E80pzPpUpcf/Y528FBJmduBcAdOrCGY5IHD4foE2+Mvru7RlXt1laTkP8U23okofy9TWMKZyaThuyXZjxW/zSkTeWVwu0Yzwe56VsVgSiZdNThvElRm9I/1T+BR4TLHxjqmX5U/tgj6atSz8Baul6cVoP3RdrGv+TSjwPuUnPi2ZKgtx8iZeuO7JmDk3ZAoPLMpDvVw+3ynB3Itj90GUXvtps9vOf2NEklkJSUowAzQBaf9AqyNDrrEg+wkryyaZohCNDeVlkq45nAPgPxRKcoLoJtLnpp8huKA1ekUstDqzhpmLouUjUntTgiFOKsjkCLrFbZgwB30bV/nCKPEx8Dg42R0dA8Mb2Olok7lUARZ4LYk186doRTRkdkavKqxeuzUDSNDcIEEY8xOQ9sDtbzfmteq2kllAa5bp09kYBCz7YA=

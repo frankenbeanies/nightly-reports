@@ -32,4 +32,30 @@ export class Report {
         this.X = 0;
         this.Z = 0;
     }
+
+    public ToFormatedString(): string{
+        return "A: " + this.A + "%0D%0A" +
+            "B: " + this.B + "%0D%0A" + 
+            "C: " + this.C + "%0D%0A" + 
+            "D: " + this.D + "%0D%0A" + 
+            "E: " + this.E + "%0D%0A" + 
+            "F: " + this.F + "%0D%0A" + 
+            "G: " + this.G + "%0D%0A" + 
+            "H: " + this.H + "%0D%0A" + 
+            "K: " + this.K + "%0D%0A" + 
+            "L: " + this.L + "%0D%0A" + 
+            "P: " + this.P + "%0D%0A" + 
+            "S: " + this.S + "%0D%0A" + 
+            "V: " + this.V + "%0D%0A" + 
+            "X: " + this.X + "%0D%0A" + 
+            "Z: " + this.Z + "%0D%0A" + 
+            "Total: " + this.Total() + "%0D%0A";
+    }
+
+    public Total(): number{
+        return this.A + this.B + this.C + this.D +
+            this.E + this.F + this.G + this.H + 
+            this.K + this.L + this.P + this.S + 
+            this.V + this.X + this.Z;
+    }
 }

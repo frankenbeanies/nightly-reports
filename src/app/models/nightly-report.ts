@@ -16,4 +16,11 @@ export class NightlyReport {
         this.InTomorrow = new Report();
         this.OutTomorrow = new Report();
     }
+
+    public ToFormattedString(): string{
+        return "In Today%0D%0A%0D%0A" + this.InToday.ToFormatedString()
+            + "%0D%0A%0D%0A%0D%0AOut Today%0D%0A%0D%0A" + this.OutToday.ToFormatedString()
+            + "%0D%0A%0D%0A%0D%0AIn Tomorrow%0D%0A%0D%0A" + this.InTomorrow.ToFormatedString()
+            + "%0D%0A%0D%0A%0D%0AOut Tomorrow%0D%0A%0D%0A" + this.OutTomorrow.ToFormatedString(); 
+    }
 }

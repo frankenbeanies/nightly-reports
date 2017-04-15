@@ -19,6 +19,14 @@ export class NightlyReportComponent{
     }
 
     public IsValid(): boolean{
-        return this.nightlyReport.Employee != "" && this.nightlyReport.Store != "";
+        return this.EmployeeValid() && this.StoreValid();
+    }
+
+    public EmployeeValid(): boolean{
+        return this.nightlyReport.Employee != "";
+    }
+
+    public StoreValid(): boolean{
+        return this.nightlyReport.Store != "";
     }
 }

@@ -1,18 +1,24 @@
-<div class="container-fluid">
+<div class="container-fluid" style="margin: 32px 0px">
     <div class="card">
         <div class="card-header">
             Nightly Report
         </div>
         <div class="card-block">
             <div class="form-group">
+                <div [hidden]="EmployeeValid()" class="alert alert-danger" role="alert">
+                    Please enter your name. 
+                </div>
                 <label for="employee">Employee</label>
                 <input type="text" name="employee" id="employee" class="form-control" placeholder="Employee Name" [(ngModel)]="nightlyReport.Employee" />
             </div>
             <div class="form-group">
+                <div [hidden]="StoreValid()" class="alert alert-danger" role="alert">
+                    Please enter the store.
+                </div>
                 <label for="store">Store</label>
-                <input type="text" name="store" id="store" class="form-control" placeholder="e.g. Newington, Hartford...." [(ngModel)]="nightlyReport.Store" />
+                <input type="text" name="store" id="store" class="form-control" placeholder="e.g. Newington, Hartford, Wallingford...." [(ngModel)]="nightlyReport.Store" />
             </div>
-            <div class="form row">
+            <div class="row">
                 <div class="col-md-6 form-group">
                     <report [title]="'Cars In Today'" [report]="nightlyReport.InToday" (reportEmitter)="nightlyReport.InToday = $event"></report>
                 </div>

@@ -3,6 +3,7 @@ import { Report } from './report';
 export class NightlyReport {
     public Employee: string;
     public Store: string;
+    public Comments: string;
     public InToday: Report;
     public OutToday: Report;
     public InTomorrow: Report;
@@ -26,6 +27,7 @@ export class NightlyReport {
             + "%0D%0A%0D%0A%0D%0AOut Today%0D%0A%0D%0A" + this.OutToday.ToFormatedString()
             + "%0D%0A%0D%0A%0D%0AIn Tomorrow%0D%0A%0D%0A" + this.InTomorrow.ToFormatedString()
             + "%0D%0A%0D%0A%0D%0AOut Tomorrow%0D%0A%0D%0A" + this.OutTomorrow.ToFormatedString()
-            + "%0D%0A%0D%0A%0D%0AOut of Service%0D%0A%0D%0A" + this.OutOfService.ToFormatedString();
+            + "%0D%0A%0D%0A%0D%0AOut of Service%0D%0A%0D%0A" + this.OutOfService.ToFormatedString()
+            + "%0D%0A%0D%0A%0D%0AComments%0D%0A%0D%0A" + this.Comments;
     }
 }

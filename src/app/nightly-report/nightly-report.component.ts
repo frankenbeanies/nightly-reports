@@ -15,7 +15,7 @@ export class NightlyReportComponent{
             this.nightlyReport.Store + " | " + 
             date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
         let body: string = this.nightlyReport.ToFormattedString();
-        document.location.href="mailto:me@samuelbostick.com?subject=" + subject + "&body=" + body;
+        document.location.href="mailto:abg@bozco.net?subject=" + subject + "&body=" + body;
     }
 
     public IsValid(): boolean{

@@ -59,6 +59,10 @@
         </div>
         <div class="row">
             <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">W</div>
+                <input [(ngModel)]="report.W" (change)="Change()" name="report" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
                 <div class="input-group-addon">V</div>
                 <input [(ngModel)]="report.V" (change)="Change()" name="report" type="number" class="form-control" min="0"/>
             </div>

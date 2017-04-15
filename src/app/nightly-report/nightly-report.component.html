@@ -37,6 +37,10 @@
                 </div>
             </div>
             <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" class="form-control" placeholder="Comments" [(ngModel)]="nightlyReport.Comments"></textarea>
+            </div>
+            <div class="form-group">
                 <button [disabled]="!IsValid()" class="btn btn-primary" (click)="SendReport()">Submit</button>
             </div>
         </div>

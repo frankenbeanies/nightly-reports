@@ -12,6 +12,7 @@ export class Report {
     P: number;
     S: number;
     V: number;
+    W: number;
     X: number;
     Z: number;
 
@@ -29,26 +30,28 @@ export class Report {
         this.P = 0;
         this.S = 0;
         this.V = 0;
+        this.W = 0;
         this.X = 0;
         this.Z = 0;
     }
 
     public ToFormatedString(): string{
-        return "A: " + this.A + "%0D%0A" +
-            "B: " + this.B + "%0D%0A" + 
-            "C: " + this.C + "%0D%0A" + 
-            "D: " + this.D + "%0D%0A" + 
-            "E: " + this.E + "%0D%0A" + 
-            "F: " + this.F + "%0D%0A" + 
-            "G: " + this.G + "%0D%0A" + 
-            "H: " + this.H + "%0D%0A" + 
-            "K: " + this.K + "%0D%0A" + 
-            "L: " + this.L + "%0D%0A" + 
-            "P: " + this.P + "%0D%0A" + 
-            "S: " + this.S + "%0D%0A" + 
-            "V: " + this.V + "%0D%0A" + 
-            "X: " + this.X + "%0D%0A" + 
-            "Z: " + this.Z + "%0D%0A" + 
+        return this.ElementToString('A', this.A) +
+            this.ElementToString('B', this.B) + 
+            this.ElementToString('C', this.C) + 
+            this.ElementToString('D', this.D) + 
+            this.ElementToString('E', this.E) + 
+            this.ElementToString('F', this.F) + 
+            this.ElementToString('G', this.G) +
+            this.ElementToString('H', this.H) + 
+            this.ElementToString('K', this.K) + 
+            this.ElementToString('L', this.L) + 
+            this.ElementToString('P', this.P) + 
+            this.ElementToString('S', this.S) + 
+            this.ElementToString('V', this.V) + 
+            this.ElementToString('W', this.W) +
+            this.ElementToString('X', this.X) + 
+            this.ElementToString('Z', this.Z) + 
             "Total: " + this.Total() + "%0D%0A";
     }
 
@@ -56,6 +59,14 @@ export class Report {
         return this.A + this.B + this.C + this.D +
             this.E + this.F + this.G + this.H + 
             this.K + this.L + this.P + this.S + 
-            this.V + this.X + this.Z;
+            this.V + this.W + this.X + this.Z;
+    }
+
+    private ElementToString(letter: string, ele: number): string{
+        if(ele > 0){
+            return letter + ": " + ele + "%0D%0A"
+        }else{
+            return "";
+        }
     }
 }

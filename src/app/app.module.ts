@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app/app.component';
+import { NightlyReportComponent } from './nightly-report/nightly-report.component';
 import { ReportComponent } from './report/report.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NightlyReportComponent,
     ReportComponent
   ],
   imports: [

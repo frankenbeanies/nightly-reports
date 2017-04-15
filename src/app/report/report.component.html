@@ -1,327 +1,74 @@
-<div class="container-fluid">
-    <div class="card">
-        <div class="card-header">
-            Nightly Report
+<div class="card">
+    <div class="card-header">
+        Cars-In (Today)
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">A</div>
+                <input [(ngModel)]="report.A" name="A" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">B</div>
+                <input [(ngModel)]="report.B" name="B" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">C</div>
+                <input [(ngModel)]="report.C" name="report" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">D</div>
+                <input [(ngModel)]="report.D" name="report" type="number" class="form-control" min="0"/>
+            </div>
         </div>
-        <div class="card-block">
-            <div class="form-group">
-                <label for="employee">Employee</label>
-                <input type="text" name="employee" id="employee" class="form-control" placeholder="Employee Name" [(ngModel)]="nightlyReport.Employee" />
+        <div class="row">
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">E</div>
+                <input [(ngModel)]="report.E" name="report" type="number" class="form-control" min="0"/>
             </div>
-            <div class="form row">
-                <div class="col-md-6 form-group">
-                    <div class="card">
-                        <div class="card-header">
-                            Cars-In (Today)
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">A</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.A" name="A" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">B</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.B" name="B" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">C</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.C" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">D</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.D" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">E</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.E" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">F</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.F" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">G</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.G" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">H</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.H" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">K</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.K" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">L</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.L" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">P</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.P" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">S</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.S" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">V</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.V" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">X</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.X" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">Z</div>
-                                    <input [(ngModel)]="nightlyReport.InToday.Z" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 form-group">
-                    <div class="card">
-                        <div class="card-header">
-                            Cars-Out (Today)
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">A</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.A" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">B</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.B" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">C</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.C" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">D</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.D" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">E</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.E" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">F</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.F" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">G</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.G" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">H</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.H" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">K</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.K" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">L</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.L" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">P</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.P" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">S</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.S" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">V</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.V" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">X</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.X" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">Z</div>
-                                    <input [(ngModel)]="nightlyReport.OutToday.Z" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">F</div>
+                <input [(ngModel)]="report.F" name="report" type="number" class="form-control" min="0"/>
             </div>
-            <div class="row">
-                <div class="col-md-6 form-group">
-                    <div class="card">
-                        <div class="card-header">
-                            Cars-In (Tommorrow)
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">A</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.A" name="report" type="number" class="form-control"  min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">B</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.B" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">C</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.C" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">D</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.D" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">E</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.E" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">F</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.F" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">G</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.G" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">H</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.H" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">K</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.K" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">L</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.L" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">P</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.P" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">S</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.S" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">V</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.V" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">X</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.X" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">Z</div>
-                                    <input [(ngModel)]="nightlyReport.InTomorrow.Z" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 form-group">
-                    <div class="card">
-                        <div class="card-header">
-                            Cars-Out (Today)
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">A</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.A" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">B</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.B" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">C</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.C" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">D</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.D" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">E</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.E" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">F</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.F" name="report" type="number" class="form-control"v min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">G</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.G" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">H</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.H" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">K</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.K" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">L</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.L" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">P</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.P" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">S</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.S" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">V</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.V" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">X</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.X" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                                <div class="input-group col-lg-3 col-sm-6">
-                                    <div class="input-group-addon">Z</div>
-                                    <input [(ngModel)]="nightlyReport.OutTomorrow.Z" name="report" type="number" class="form-control" min="0"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">G</div>
+                <input [(ngModel)]="report.G" name="report" type="number" class="form-control" min="0"/>
             </div>
-            <div class="form-group">
-                <button class="btn btn-primary" (click)="SaveReport()">Submit</button>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">H</div>
+                <input [(ngModel)]="report.H" name="report" type="number" class="form-control" min="0"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">K</div>
+                <input [(ngModel)]="report.K" name="report" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">L</div>
+                <input [(ngModel)]="report.L" name="report" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">P</div>
+                <input [(ngModel)]="report.P" name="report" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">S</div>
+                <input [(ngModel)]="report.S" name="report" type="number" class="form-control" min="0"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">V</div>
+                <input [(ngModel)]="report.V" name="report" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">X</div>
+                <input [(ngModel)]="report.X" name="report" type="number" class="form-control" min="0"/>
+            </div>
+            <div class="input-group col-lg-3 col-sm-6">
+                <div class="input-group-addon">Z</div>
+                <input [(ngModel)]="report.Z" name="report" type="number" class="form-control" min="0"/>
             </div>
         </div>
     </div>

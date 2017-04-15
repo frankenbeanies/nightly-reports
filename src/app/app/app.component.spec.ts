@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { NightlyReportComponent } from '../nightly-report/nightly-report.component';
 import { ReportComponent } from '../report/report.component';
 
 describe('AppComponent', () => {
@@ -9,6 +10,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
+        NightlyReportComponent,
         ReportComponent
       ],
       imports: [

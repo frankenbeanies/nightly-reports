@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-import { NightlyReport } from '../models/nightly-report';
 import { Report } from '../models/report';
 
 @Component({
@@ -9,8 +8,5 @@ import { Report } from '../models/report';
     styles: ['./report.component.css']
 })
 export class ReportComponent {
-    public nightlyReport: NightlyReport = new NightlyReport();
-
-    public SaveReport(): void{
-    }
+    public report: Report = new Report();
 }

@@ -32,6 +32,9 @@
                 <div class="col-md-6 form-group">
                     <report [title]="'Cars On Lot'" [report]="nightlyReport.OnLot" (reportEmitter)="nightlyReport.OnLot = $event"></report>
                 </div>
+                <div class="col-md-6 form-group">
+                    <report [title]="'Out of Service'" [report]="nightlyReport.OutOfService" (reportEmitter)="nightlyReport.OutOfService = $event"></report>
+                </div>
             </div>
             <div class="form-group">
                 <button [disabled]="!IsValid()" class="btn btn-primary" (click)="SendReport()">Submit</button>

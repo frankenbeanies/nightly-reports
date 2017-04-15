@@ -14,22 +14,27 @@
             </div>
             <div class="form row">
                 <div class="col-md-6 form-group">
-                    <report [report]="nightlyReport.InToday" (reportEmitter)="nightlyReport.InToday = $event"></report>
+                    <report [title]="'Cars In Today'" [report]="nightlyReport.InToday" (reportEmitter)="nightlyReport.InToday = $event"></report>
                 </div>
                 <div class="col-md-6 form-group">
-                    <report [report]="nightlyReport.OutToday" (reportEmitter)="nightlyReport.OutToday = $event"></report>
+                    <report [title]="'Cars Out Today'" [report]="nightlyReport.OutToday" (reportEmitter)="nightlyReport.OutToday = $event"></report>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 form-group">
-                    <report [report]="nightlyReport.InTomorrow" (reportEmitter)="nightlyReport.InTomorrow = $event"></report>
+                    <report [title]="'Cars In Tomorrow'" [report]="nightlyReport.InTomorrow" (reportEmitter)="nightlyReport.InTomorrow = $event"></report>
                 </div>
                 <div class="col-md-6 form-group">
-                    <report [report]="nightlyReport.OutTomorrow" (reportEmitter)="nightlyReport.OutTomorrow = $event"></report>
+                    <report [title]="'Cars Out Tomorrow'" [report]="nightlyReport.OutTomorrow" (reportEmitter)="nightlyReport.OutTomorrow = $event"></report>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <report [title]="'Cars On Lot'" [report]="nightlyReport.OnLot" (reportEmitter)="nightlyReport.OnLot = $event"></report>
                 </div>
             </div>
             <div class="form-group">
-                <button class="btn btn-primary" (click)="SendReport()">Submit</button>
+                <button [disabled]="!IsValid()" class="btn btn-primary" (click)="SendReport()">Submit</button>
             </div>
         </div>
     </div>

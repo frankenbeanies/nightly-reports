@@ -8,6 +8,7 @@ import { Report } from '../models/report';
     styles: ['./report.component.css']
 })
 export class ReportComponent {
+    @Input("title") title: string = "";
     @Input("report") report: Report = new Report();
     @Output("reportEmitter") ReportEmitter: EventEmitter<Report> = new EventEmitter<Report>();
 

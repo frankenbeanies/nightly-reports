@@ -17,4 +17,8 @@ export class NightlyReportComponent{
         let body: string = this.nightlyReport.ToFormattedString();
         document.location.href="mailto:me@samuelbostick.com?subject=" + subject + "&body=" + body;
     }
+
+    public IsValid(): boolean{
+        return this.nightlyReport.Employee != "" && this.nightlyReport.Store != "";
+    }
 }

@@ -7,6 +7,7 @@ export class NightlyReport {
     public OutToday: Report;
     public InTomorrow: Report;
     public OutTomorrow: Report;
+    public OnLot: Report;
 
     public constructor(){
         this.Employee = "";
@@ -15,6 +16,7 @@ export class NightlyReport {
         this.OutToday = new Report();
         this.InTomorrow = new Report();
         this.OutTomorrow = new Report();
+        this.OnLot = new Report();
     }
 
     public ToFormattedString(): string{

@@ -4,19 +4,21 @@
             Nightly Report
         </div>
         <div class="card-block">
-            <div class="form-group">
-                <div [hidden]="EmployeeValid()" class="alert alert-danger" role="alert">
-                    Please enter your name. 
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <div [hidden]="EmployeeValid()" class="alert alert-danger" role="alert">
+                        Please enter your name. 
+                    </div>
+                    <label for="employee">Employee</label>
+                    <input type="text" name="employee" id="employee" class="form-control" placeholder="Employee Name" [(ngModel)]="nightlyReport.Employee" />
                 </div>
-                <label for="employee">Employee</label>
-                <input type="text" name="employee" id="employee" class="form-control" placeholder="Employee Name" [(ngModel)]="nightlyReport.Employee" />
-            </div>
-            <div class="form-group">
-                <div [hidden]="StoreValid()" class="alert alert-danger" role="alert">
-                    Please enter the store.
+                <div class="form-group col-md-6">
+                    <div [hidden]="StoreValid()" class="alert alert-danger" role="alert">
+                        Please enter the store.
+                    </div>
+                    <label for="store">Store</label>
+                    <input type="text" name="store" id="store" class="form-control" placeholder="e.g. Newington, Hartford, Wallingford...." [(ngModel)]="nightlyReport.Store" />
                 </div>
-                <label for="store">Store</label>
-                <input type="text" name="store" id="store" class="form-control" placeholder="e.g. Newington, Hartford, Wallingford...." [(ngModel)]="nightlyReport.Store" />
             </div>
             <div class="row">
                 <div class="col-md-6 form-group">
